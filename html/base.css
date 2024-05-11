@@ -1,69 +1,60 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-h2 {
-    margin-bottom: 20px;
+    padding: 20px;
     color: #333;
 }
 
-form {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
+h2 {
     color: #555;
+    margin-bottom: 20px;
 }
 
-input[type="text"], input[type="password"], input[type="number"] {
-    padding: 12px 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 9999px;
-    width: 100%;
-    box-sizing: border-box;
+input[type="text"], input[type="password"], input[type="number"], select {
+    padding: 8px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(100% - 18px);
 }
 
 input[type="submit"] {
-    padding: 12px 20px;
-    background: #74ebd5;
-    color: #fff;
+    background-color: #5c67f2;
+    color: white;
     border: none;
-    border-radius: 9999px;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-    background: #acb6e5;
+    background-color: #4a54e1;
 }
 
-.addBtn {
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+a {
+    color: #5c67f2;
     text-decoration: none;
-    background: #74ebd5;
-    padding: 8px 16px;
-    color: #fff;
-    border-radius: 9999px;
-    transition: all 0.3s;
-    margin-top: 10px;
+    transition: color 0.3s;
 }
 
 a:hover {
-    background: #acb6e5;
+    color: #4a54e1;
 }
-
-
