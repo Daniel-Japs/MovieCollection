@@ -1,8 +1,18 @@
+<?php
+session_start();
+
+if (isset($_SESSION['loggedin'])) {
+    header("Location: home.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
