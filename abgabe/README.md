@@ -1,7 +1,7 @@
 # MovieCollection
 
 Japs, Daniel - Matrnr.1714802
-Vottschel, Julian - Matrnr.1714747
+Vottschel, Julian - Matrnr. 1714747
 Kreye, Jannis - Matrnr. 1714967
 Hebenbrock, Lars - Matrnr.1714718
 
