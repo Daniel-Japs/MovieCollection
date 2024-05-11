@@ -46,7 +46,7 @@ function searchSeries($conn, $title= null, $genre= null, $platform= null) {
         $types .= 's';
         $params[] = $platform;
     }
-
+    $sql .= " ORDER BY title,seasons,genre,platform";
     // Prepare the statement
     $stmt = mysqli_prepare($conn, $sql);
     if (!$stmt) {
