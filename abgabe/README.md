@@ -18,8 +18,13 @@ Suche nach Plattform: Julian Vottschel
 
 
 Testen:
-Zum testen kann Docker mit den unten gelisteten Befehlen verwenden.
-Alternativ kann das init.sql lokal auf der Datenbank ausgeführt werden. Dann müssen die Daten in db_conn.php auf die Daten der DB geändert werden.
+
+ Das db.sql lokal auf der Datenbank ausgeführt werden. Dann müssen die Daten in db_conn.php auf die Daten der DB geändert werden.
+Login:
+user1 pw:user1
+user2 pw:user2
+
+Alternativ kann Docker zum testen mit den unten gelisteten Befehlen(im Verzeichnis docker) verwendet werden.
 Run:
 docker-compose up
 
