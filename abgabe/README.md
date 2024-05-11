@@ -2,7 +2,7 @@
 
 Japs, Daniel - Matrnr.1714802
 Vottschel, Julian - Matrnr.1714747
-Jannis, Kreye - Matrnr. 1714967
+Kreye, Jannis - Matrnr. 1714967
 Hebenbrock, Lars - Matrnr.1714718
 
 
