@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+table {
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background: #6dd5fa;
+    color: #fff;
+}
+
+td {
+    background: #fff;
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background: #f3f3f3;
+}
