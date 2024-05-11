@@ -71,7 +71,7 @@ $genres = getGenres($conn);
                     
                 </td>
                 <td>
-                    <input type="submit" value="Search"/>
+                    <input type="submit" value="Search">
                 </td>
             </form>
         </tr>
