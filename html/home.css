@@ -1,79 +1,89 @@
 body {
     background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 10px;
 }
 
 table {
-    width: 80%;
     max-width: 900px;
-    margin-bottom: 20px;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
 }
 
-th, td {
-    padding: 12px 15px;
-    text-align: left;
+input[type="text"], select {
+    padding: 8px;
 }
 
-th {
-    background: #6dd5fa;
-    color: #fff;
-}
-
-td {
-    background: #fff;
-    color: #333;
-}
-
-tr:nth-child(even) td {
-    background: #f3f3f3;
-}
-
-.tr-search td {
-    background-color: #cce0f5;
-    color: #333; 
-}
-
-.tr-search input[type="text"] {
-    padding: 8px;             
-    margin: 0;                
-    border: 1px solid #ccc;   
-    width: 95%;               
-    box-sizing: border-box;   
-}
-
-.tr-search input[type="submit"] {
-    padding: 8px 16px;        
-    background-color: #4393d5; 
-    color: white;             
-    border: none;             
-    cursor: pointer;         
-    transition: background-color 0.3s; 
-}
-
-.tr-search input[type="submit"]:hover {
-    background-color: #45a049; 
-}
-
-
-.deleteBtn {
-    text-decoration: none;
-    background: #b03737;
+input[type="submit"] {
     padding: 8px 16px;
-    color: #fff;
-    border-radius: 9999px;
-    transition: all 0.3s;
-    margin-top: 10px;
+    background-color: #4caf50;
 }
 
-.logoutBtn {
+input[type="submit"]:hover {
+    background-color: #66bb6a;
+}
+
+a.deleteBtn, a.addBtn, a.logoutBtn {
     text-decoration: none;
-    background: #d6ae40;
-    padding: 10px 20px;
+    padding: 10px 15px;
     color: #fff;
-    border-radius: 9999px;
-    transition: all 0.3s;
-    margin-top: 10px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin: 5px;
+}
+
+a.deleteBtn {
+    background-color: #ff5f5f;
+}
+
+a.deleteBtn:hover {
+    background-color: #fc8383;
+}
+
+a.addBtn {
+    background-color: #4caf50;
+}
+
+a.addBtn:hover {
+    background-color: #66bb6a;
+}
+
+a.logoutBtn {
+    background-color: #f44336;
+}
+
+a.logoutBtn:hover {
+    background-color: #ef5350;
+}
+
+@media (max-width: 600px) {
+    th, td {
+        text-align: right;
+        padding: 8px;
+        border-bottom: 0;
+    }
+
+    td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #6dd5fa;
+    }
+
+    td:last-child {
+        border-bottom: 0;
+    }
+
+    input[type="text"], select {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .tr-search form {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
